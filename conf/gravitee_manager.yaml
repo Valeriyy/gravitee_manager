@@ -41,10 +41,3 @@ apis_config:
       groups:
       - endpoints:
         - target: "http://172.18.0.1/test"
-  - name: "Fuck Super"
-    context_path: "/fuck"
-    description: "Test"
-    proxy:
-      groups:
-      - endpoints:
-        - target: "http://172.18.0.1/personal-data"
