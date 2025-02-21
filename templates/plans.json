@@ -1,0 +1,13 @@
+{
+  "name" : "My Plan",
+  "description" : "Unlimited access plan",
+  "validation" : "AUTO",
+  "security" : "KEY_LESS",
+  "type" : "API",
+  "status" : "PUBLISHED",
+  "order" : 1,
+  "characteristics" : [ ],
+  "paths" : { },
+  "flows" : [ ],
+  "comment_required" : false
+} 

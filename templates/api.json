@@ -1,0 +1,37 @@
+{
+  "environmentId" : "DEFAULT",
+  "name" : "",
+  "version" : "1",
+  "description" : "Gravitee.io API Proxy",
+  "visibility" : "PRIVATE",
+  "state" : "STARTED",
+  "tags" : [ ],
+  "entrypoints" : [ ],
+  "execution_mode" : "v3",
+  "context_path" : "",
+  "proxy" : {
+    "virtual_hosts" : [ ],
+    "strip_context_path" : false,
+    "preserve_host" : false,
+    "groups" : [ ]
+  },
+  "flow_mode" : "DEFAULT",
+  "flows" : [ ],
+  "plans" : [ ],
+  "gravitee" : "2.0.0",
+  "definition_context" : {
+    "origin" : "management",
+    "mode" : "fully_managed"
+  },
+  "owner" : {
+    "displayName" : "admin",
+    "type" : "USER"
+  },
+  "properties" : [ ],
+  "services" : { },
+  "resources" : [ ],
+  "path_mappings" : [ "/" ],
+  "response_templates" : { },
+  "lifecycle_state" : "PUBLISHED",
+  "disable_membership_notifications" : false
+}

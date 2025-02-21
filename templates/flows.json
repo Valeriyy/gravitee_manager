@@ -1,0 +1,13 @@
+{
+  "name" : "",
+  "path-operator" : {
+    "path" : "/",
+    "operator" : "STARTS_WITH"
+  },
+  "condition" : "",
+  "consumers" : [ ],
+  "methods" : [ ],
+  "pre" : [ ],
+  "post" : [ ],
+  "enabled" : true
+}

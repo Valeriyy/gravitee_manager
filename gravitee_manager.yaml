@@ -1,0 +1,50 @@
+api_host: "http://localhost:8083"
+auth_token: "d87055c1-f93b-4030-b055-c1f93bd0307f"
+organization: "DEFAULT"
+apis_config:
+  apis:
+  - name: "alfa-test-api"
+    version: "1.0"
+    context_path: "/new_test"
+    description: "Test API via python script"
+    #entrypoints: "test123"
+    proxy:
+      #virtual_hosts: "test123"
+      groups: 
+      - endpoints: 
+        - target: "http://172.18.0.1/personal-data"
+    flows:
+    - name: "Test"
+      pre:
+      - name: "Resource Filtering"
+        description: ""
+        enabled: true
+        policy: "resource-filtering"
+        configuration:
+          whitelist:
+          - methods: ["GET"]
+            pattern: "/new_test/test2"
+  - name: "test-api123"
+    version: "1.0"
+    context_path: "/new_test11"
+    description: "Test API via python script 123"
+    proxy:
+      groups: 
+      - endpoints:
+        - target: "http://172.18.0.1/personal-data"
+    #plans:
+    #  - name: "Test 77777777"
+  - name: "test"
+    context_path: "/test"
+    description: "Test API via python script 123"
+    proxy:
+      groups:
+      - endpoints:
+        - target: "http://172.18.0.1/test"
+  - name: "Fuck Super"
+    context_path: "/fuck"
+    description: "Test"
+    proxy:
+      groups:
+      - endpoints:
+        - target: "http://172.18.0.1/personal-data"
